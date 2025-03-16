@@ -32,9 +32,7 @@ contract SimpleStorage {
         fixedArrayOfNumber[index] = newNumber;
     }
 
-    function pushToDynamicArrayOfPerson(string memory name, uint256 _number)
-        public
-    {
+    function pushToDynamicArrayOfPerson(string memory name, uint256 _number) public{
         dynamicArrayOfPerson.push(Person({name: name, number: _number}));
     }
 
